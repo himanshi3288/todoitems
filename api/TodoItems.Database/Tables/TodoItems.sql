@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[TodoItems]
+(
+	[Id] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
+    [Text] NVARCHAR(MAX) NOT NULL, 
+    [UserId] BIGINT NOT NULL, 
+    [IsDeleted] BIT NOT NULL DEFAULT 0, 
+    [CreatedDateUTC] DATETIME2 NOT NULL, 
+    [UpdatedDateUTC] DATETIME2 NULL
+)

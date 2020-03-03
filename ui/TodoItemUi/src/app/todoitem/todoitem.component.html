@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col" *ngIf="!IsEditMode">{{Item.Text}}</div>
+  <div class="col" *ngIf="IsEditMode">
+    <input type="text" [(ngModel)]="Item.Text" name="text" class="form-control">
+  </div>
+  <div class="col" *ngIf="!IsEditMode">
+    <button (click)="editItem()" class="btn btn-secondary"><i class="fa fa-pencil"></i> </button>
+    &nbsp;
+    <button (click)="deleteItem()" class="btn btn-danger"><i class="fa fa-trash"></i> </button>
+  </div>
+  <div class="col" *ngIf="IsEditMode">
+    <button (click)="onSave()" class="btn btn-success" title="Save"><i class="fa fa-check"></i></button>
+    &nbsp;
+    <button (click)="deleteItem()" class="btn btn-danger"><i class="fa fa-trash"></i> </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">&nbsp;</div>
+</div>

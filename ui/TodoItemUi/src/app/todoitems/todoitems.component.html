@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col">&nbsp;</div>
+  </div>
+  <div class="row">
+
+    <div class="col"><h1>To Do</h1></div>
+
+    <div class="col">
+      <button class="btn btn-primary" (click)="addNew()" title="Add New" > <i class="fa fa-plus"></i> </button>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col">&nbsp;</div>
+  </div>
+  <div class="row" *ngFor="let item of Items;index as i">
+    <div class="col">
+      <app-todoitem [Item]="item" (OnItemDeleted)="OnItemDeleted($event)" [ItemIndex]="i"></app-todoitem>
+    </div>
+  </div>
+
+</div>

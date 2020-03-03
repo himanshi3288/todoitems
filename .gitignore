@@ -1,0 +1,54 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/ui/TodoItemUi/node_modules
+/api/TodoItems.Api/bin
+/api/TodoItems.Api/obj
+/api/TodoItems.Database/bin
+/api/TodoItems.Database/obj
+/api/TodoItems.Domain/bin
+/api/TodoItems.Domain/obj
+/api/TodoItems.Entities/bin
+/api/TodoItems.Entities/obj
+/api/TodoItems.Repository/bin
+/api/TodoItems.Repository/obj
+/api/TodoItems.Utilities/bin
+/api/TodoItems.Utilities/obj
+/api/.vs
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+/api/TodoItems.Database/TodoItems.Database.dbmdl
+/api/TodoItems.Database/TodoItems.Database.jfm
